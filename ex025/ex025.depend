@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1593041887 source:c:\users\hasanat\documents\cpp\exercise04\ex025\array.cpp
+	"array.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+
+1593032474 c:\users\hasanat\documents\cpp\exercise04\ex025\array.h
+
+1593033233 source:c:\users\hasanat\documents\cpp\exercise04\ex025\main.cpp
+	<iostream>
+	"array.h"
+	<cstdlib>
+	<ctime>
+
+1593017276 source:c:\users\hasanat\documents\cpp\exercise04\ex025\stats.cpp
+

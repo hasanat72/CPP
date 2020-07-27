@@ -1,0 +1,15 @@
+/*
+    Problem description : Write one constructor that accepts as parameters the name of the citizen and the language he or she is speaking:
+The language is specified as an enum type with the values ENGLISH, GERMAN and DUTCH (see the lecture
+slides, chapter 2, Data: Variables, Types, Constants). Ensure that you fill the array of characters for name and
+check for the length of the provided name. Additionally, define a default constructor, which initializes the member
+variables name with Anonymous, age with 0 and language with DUTCH. Depending on the value of the
+language member variable, the member function sayHello can display the following output:
+Language output of the function sayHello
+GERMAN Hallo
+ENGLISH Hi there
+DUTCH Goeiedag
+Write a main program (mainCitizen.cpp) that creates two objects of class Citizen by using the implemented
+constructors and test your implemented sayHello member function for each object. The name of the citizen
+does not need to be asked from the command line, it should be directly passed as a parameter in the constructor.
+*/

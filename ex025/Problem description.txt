@@ -1,0 +1,40 @@
+A new directory ex025 has been created in your home directory for you; Change to that directory
+! Once there, note that a Makefile file is there that allows you later to compile and link your source code in
+this directory
+! The Makefile assumes that you create three new files, stats.cpp, array.h, and array.cpp, with
+the nano editor
+Write your own class Array, which holds an array of 20 unsigned integers and allows displaying and calculating
+basic statistics on this array. Use the array.h and array.cpp files to define your Array class. Start with writing
+the Array class, by implementing the following:
+! Write a constructor for the Array class that initialises all 20 numbers to a random number between 0 and 99.
+Hint: Use the rand() function from the <cstdlib> library as seen in the lecture’s game example and use
+the modulo (%) operator to restrict the value between 0 and 99. To make sure that you obtain different pseudorandom numbers, initialize the random seed by starting your constructor with: srand( time(NULL) );
+! Write a member function for the Array class that displays all 20 numbers on a single line, separated by
+a single whitespace (" "). Make sure that the function also jumps to a new line in the console (using
+std::endl for instance) after displaying all numbers.
+! Write one member function that calculates the minimum, and one member function that calculates the maximum value of all numbers in Array. The functions should return these values, and should not write them
+out in the console.
+! Write one member function that calculates the mean (average), and one member function that calculates the
+variance of all numbers in Array. The functions should return these values (not write them in the console).
+Refresh from your math classes: variance = !19 i=0 (n [i] - mean)2/20 , mean = !19 i=0 n [i]/20.
+Make sure that your Array class is properly constructed for future use by others:
+! Use header guards in the array.h file to prevent a code file from receiving more than one copy of the
+array.h file.
+! Make sure that the data (the array that holds 20 numbers) is a private part of the class and cannot be
+accessed outside the Array class.
+2The stats.cpp file should then hold your main function, which will use your Array class. Include your array.h
+header file, and instantiate a single object of type Array in the main function. Then do the following with the help
+of this object:
+! First display all 20 numbers on a single line, by using previously-mentioned the Array member function
+! Then display the minimum value and the maximum value of all numbers on the next line, separated by a
+whitespace.
+! Then display the average value and the variance of all numbers on the final line, separated by a whitespace.
+Use the make command to build your program with the supplied Makefile. If successful, a stats executable file
+will be produced that displays all values. The output of this should be a list of numbers (no text or other characters)
+over three lines and look like this:
+
+
+> ./stats
+28 43 72 79 23 70 55 39 69 1 41 40 5 25 95 4 42 54 79 55
+1 95
+45.95 674.247

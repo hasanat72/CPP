@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1595434470 source:c:\users\hasanat\documents\cpp\ex032\hangman.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"hgame.h"
+
+1595434409 c:\users\hasanat\documents\cpp\ex032\hgame.h
+	"wordgame.h"
+
+1595356013 c:\users\hasanat\documents\cpp\ex032\wordgame.h
+	<iostream>
+
+1595434443 source:c:\users\hasanat\documents\cpp\ex032\hgame.cpp
+	<cstdlib>
+	<ctime>
+	"hgame.h"
+
+1595355993 source:c:\users\hasanat\documents\cpp\ex032\wordgame.cpp
+	"wordgame.h"
+

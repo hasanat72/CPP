@@ -1,0 +1,28 @@
+The objective of this assignment is to program your own hangman game. Hangman is a guessing game, in which
+players try to guess a word by suggesting letters, within a certain number of guesses. Your program should eventually announce that the user has won if all characters are guessed within 10 tries:
+> ./hangman
+I’m thinking of a word: ------- , what character shall I reveal? a
+I’m thinking of a word: -a----- , what character shall I reveal? e
+I’m thinking of a word: -a--e-- , what character shall I reveal? t
+I’m thinking of a word: -atte-- , what character shall I reveal? f
+I’m thinking of a word: -atter- , what character shall I reveal? b
+I’m thinking of a word: batter- , what character shall I reveal? y
+I’m thinking of a word: battery , great, you have won the game!
+When more than 10 tries are needed, the game should announce (use your own words) that the user has lost:
+> ./hangman
+I’m thinking of a word: ------- , what character shall I reveal? x
+I’m thinking of a word: ------y , what character shall I reveal? y
+I’m thinking of a word: ------y , what character shall I reveal? t
+I’m thinking of a word: --tt--y , what character shall I reveal? o
+...
+I’m thinking of a word: --tt--y , what character shall I reveal? b
+I’m thinking of a word: b-tt--y , Too bad, I have won!
+Use the following steps to code a class HGame with hgame.h and hgame.cpp:
+! Inspect how the class WordGame is implemented: It contains a large array of strings, called dictionary
+! Inherit a class HGame from WordGame with a private variable myWord as an object of class string
+! Create a member function reveal that works similarly to the function in exercise 31, which returns an int
+for the number of dashes that were still displayed, and uses the classes’ myWord string. (Hint: you can for
+instance use reveal(char c[10]) that displays all characters from c[10] and dashes for the others)
+! Create a constructor that selects a random string from dictionary using the rand() and srand()
+functions from cstdlib and the getSize() member function of WordGame.
+Then use an object of class HGame in your main function, implemented in hangman.cpp, to develop the Hangman game.

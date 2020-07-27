@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1593001947 source:c:\users\hasanat\documents\cpp\exercise04\exercise\main.cpp
+	<iostream>
+	"citizen.h"
+
+1593002608 source:c:\users\hasanat\documents\cpp\exercise04\exercise\citizen.cpp
+	"citizen.h"
+	<iostream>
+
+1593001848 c:\users\hasanat\documents\cpp\exercise04\exercise\citizen.h
+
+1593002608 source:c:\users\hasanat\desktop\exercise014\citizen.cpp
+	"citizen.h"
+	<iostream>
+
+1593001848 c:\users\hasanat\desktop\exercise014\citizen.h
+
+1595888006 source:c:\users\hasanat\desktop\exercise014\main.cpp
+	<iostream>
+	"citizen.h"
+
